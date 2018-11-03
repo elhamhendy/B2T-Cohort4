@@ -8,6 +8,8 @@ let library = [
 for(i = 0; i < library.length; i++){
 
 	if(library[i].readingStatus === true){
+	console.log(" already read "+library[i].title+" "+library[i].author+'<br>');
+
 	document.getElementById('display').innerHTML += `already read ${library[i].title} by ${library[i].author} <br>`;
 	} else {
 	document.getElementById('display').innerHTML += `you still need to read ${library[i].title} by ${library[i].author}<br>`;
